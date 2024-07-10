@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f8f2; /* Cor de fundo */
+    color: #34495e; /* Cor do texto */
+    margin: 20px;
+}
+
+h1 {
+    color: #34495e; /* Cor do título */
+}
+
+form {
+    background-color: #7fb3d5; /* Cor de fundo do formulário */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form p {
+    color: #34495e; /* Cor do texto dentro do formulário */
+}
+
+button[type=submit] {
+    background-color: #48c9b0; /* Cor de fundo do botão */
+    color: #f5f8f2; /* Cor do texto do botão */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type=submit]:hover {
+    background-color: #34495e; /* Mudança de cor ao passar o mouse */
+}
+
+/* Estilos para os resultados */
+div {
+    margin-top: 20px;
+}
+
+h3 {
+    color: #34495e; /* Cor do título dos resultados */
+}
+
+p {
+    color: #34495e; /* Cor do texto dos resultados */
+}
+
+/* Estilizando as bolinhas dos radio buttons */
+input[type=radio] {
+    -webkit-appearance: none; /* Remover o estilo padrão do navegador */
+    -moz-appearance: none;
+    appearance: none;
+    width: 16px; /* Reduzi o tamanho da bolinha */
+    height: 16px;
+    border-radius: 50%; /* Formato de círculo */
+    border: 2px solid #34495e; /* Cor da borda vermelha */
+    outline: none; /* Remover o contorno ao focar */
+    cursor: pointer;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Estilizando a bolinha quando selecionada */
+input[type=radio]:checked {
+    background-color: #e74c3c; /* Cor de preenchimento vermelha */
+}
+
+/* Estilos para o botão de emoção */
+#emotionBtn {
+    background-color: #e74c3c; /* Cor de fundo do botão */
+    color: #f5f8f2; /* Cor do texto do botão */
+    padding: 15px;
+    border: none;
+    border-radius: 50%; /* Botão redondo */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+}
+
+/* Estilos para as imagens */
+.images-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.images-container label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    max-width: 100px; /* Reduzindo o tamanho máximo das imagens */
+    height: auto; /* Altura automática proporcional à largura */
+    display: block; /* Garante que as imagens não tenham margens extras */
+    margin: 10px auto; /* Centraliza as imagens com margens menores */
+}
